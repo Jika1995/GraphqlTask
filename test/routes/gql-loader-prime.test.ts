@@ -1,7 +1,9 @@
+// import DataLoader from 'dataloader';
 import { test } from 'tap';
 import { build } from '../helper.js';
 import { createUser, getPrismaStats, gqlQuery, subscribeTo } from '../utils/requests.js';
 
+// new DataLoader().prime() to place my cash
 await test('gql-loader-prime', async (t) => {
   const app = await build(t);
 
